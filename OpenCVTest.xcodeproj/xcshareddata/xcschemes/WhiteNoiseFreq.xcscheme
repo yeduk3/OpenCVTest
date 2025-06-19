@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1630"
+   LastUpgradeVersion = "1640"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,9 +15,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5504624C2DD4894600938359"
-               BuildableName = "HW2"
-               BlueprintName = "HW2"
+               BlueprintIdentifier = "55F8F5AD2E011E7B00E3C2DC"
+               BuildableName = "WhiteNoiseFreq"
+               BlueprintName = "WhiteNoiseFreq"
                ReferencedContainer = "container:OpenCVTest.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -35,7 +35,7 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
-      useCustomWorkingDirectory = "NO"
+      useCustomWorkingDirectory = "YES"
       customWorkingDirectory = "${PROJECT_DIR}/WhiteNoiseFreq"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
@@ -46,9 +46,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5504624C2DD4894600938359"
-            BuildableName = "HW2"
-            BlueprintName = "HW2"
+            BlueprintIdentifier = "55F8F5AD2E011E7B00E3C2DC"
+            BuildableName = "WhiteNoiseFreq"
+            BlueprintName = "WhiteNoiseFreq"
             ReferencedContainer = "container:OpenCVTest.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -63,9 +63,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5504624C2DD4894600938359"
-            BuildableName = "HW2"
-            BlueprintName = "HW2"
+            BlueprintIdentifier = "55F8F5AD2E011E7B00E3C2DC"
+            BuildableName = "WhiteNoiseFreq"
+            BlueprintName = "WhiteNoiseFreq"
             ReferencedContainer = "container:OpenCVTest.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

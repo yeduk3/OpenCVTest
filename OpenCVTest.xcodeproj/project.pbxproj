@@ -45,6 +45,12 @@
 		55F3EF282DF5EE65008AE45C /* libopencv_highgui.4.11.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E80492DA5222C00AE5D1D /* libopencv_highgui.4.11.0.dylib */; };
 		55F3EF292DF5EE65008AE45C /* libopencv_imgproc.4.11.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E804A2DA5222C00AE5D1D /* libopencv_imgproc.4.11.0.dylib */; };
 		55F3EF362DF5EEB4008AE45C /* src.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 55F3EF352DF5EEAB008AE45C /* src.png */; };
+		55F8F5B12E011E7B00E3C2DC /* libopencv_imgcodecs.4.11.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E80472DA5222C00AE5D1D /* libopencv_imgcodecs.4.11.0.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
+		55F8F5B22E011E7B00E3C2DC /* libopencv_core.4.11.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E80482DA5222C00AE5D1D /* libopencv_core.4.11.0.dylib */; };
+		55F8F5B32E011E7B00E3C2DC /* libopencv_highgui.4.11.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E80492DA5222C00AE5D1D /* libopencv_highgui.4.11.0.dylib */; };
+		55F8F5B42E011E7B00E3C2DC /* libopencv_imgproc.4.11.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E804A2DA5222C00AE5D1D /* libopencv_imgproc.4.11.0.dylib */; };
+		55F8F5B62E011E7B00E3C2DC /* sk2.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 55E073422DF8F47F00936FA0 /* sk2.png */; };
+		55F8F5BC2E011E9100E3C2DC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55F8F5AC2E011E7500E3C2DC /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -112,6 +118,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55F8F5B52E011E7B00E3C2DC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				55F8F5B62E011E7B00E3C2DC /* sk2.png in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -142,6 +158,10 @@
 		55F3EF302DF5EE65008AE45C /* Motion Blur */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Motion Blur"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F3EF332DF5EE94008AE45C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		55F3EF352DF5EEAB008AE45C /* src.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = src.png; sourceTree = "<group>"; };
+		55F8F5AC2E011E7500E3C2DC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		55F8F5BA2E011E7B00E3C2DC /* WhiteNoiseFreq */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WhiteNoiseFreq; sourceTree = BUILT_PRODUCTS_DIR; };
+		55F8F5BD2E011ED200E3C2DC /* pns.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pns.png; sourceTree = "<group>"; };
+		55F8F5BE2E011ED200E3C2DC /* src.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = src.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -180,6 +200,13 @@
 			);
 			target = 55F3EF222DF5EE65008AE45C /* Motion Blur */;
 		};
+		55F8F5BB2E011E7B00E3C2DC /* Exceptions for "OpenCVTest" folder in "WhiteNoiseFreq" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				main.cpp,
+			);
+			target = 55F8F5AD2E011E7B00E3C2DC /* WhiteNoiseFreq */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -191,6 +218,7 @@
 				5564D7E02DE6B1FF002F0650 /* Exceptions for "OpenCVTest" folder in "HW3" target */,
 				55F3EF312DF5EE65008AE45C /* Exceptions for "OpenCVTest" folder in "Motion Blur" target */,
 				55E073402DF8F44600936FA0 /* Exceptions for "OpenCVTest" folder in "HW4" target */,
+				55F8F5BB2E011E7B00E3C2DC /* Exceptions for "OpenCVTest" folder in "WhiteNoiseFreq" target */,
 			);
 			path = OpenCVTest;
 			sourceTree = "<group>";
@@ -264,6 +292,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55F8F5B02E011E7B00E3C2DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55F8F5B12E011E7B00E3C2DC /* libopencv_imgcodecs.4.11.0.dylib in Frameworks */,
+				55F8F5B22E011E7B00E3C2DC /* libopencv_core.4.11.0.dylib in Frameworks */,
+				55F8F5B32E011E7B00E3C2DC /* libopencv_highgui.4.11.0.dylib in Frameworks */,
+				55F8F5B42E011E7B00E3C2DC /* libopencv_imgproc.4.11.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -305,6 +344,7 @@
 		55ACCCF82D9CF4350082AAB2 = {
 			isa = PBXGroup;
 			children = (
+				55F8F5AB2E011E6300E3C2DC /* WhiteNoiseFreq */,
 				55E073302DF8F43C00936FA0 /* HW4 */,
 				55F3EF322DF5EE8D008AE45C /* MotionBlur */,
 				5564D7CF2DE6B1F5002F0650 /* HW3 */,
@@ -325,6 +365,7 @@
 				5564D7DF2DE6B1FE002F0650 /* HW3 */,
 				55F3EF302DF5EE65008AE45C /* Motion Blur */,
 				55E0733F2DF8F44600936FA0 /* HW4 */,
+				55F8F5BA2E011E7B00E3C2DC /* WhiteNoiseFreq */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -355,6 +396,16 @@
 				55F3EF332DF5EE94008AE45C /* main.cpp */,
 			);
 			path = MotionBlur;
+			sourceTree = "<group>";
+		};
+		55F8F5AB2E011E6300E3C2DC /* WhiteNoiseFreq */ = {
+			isa = PBXGroup;
+			children = (
+				55F8F5BD2E011ED200E3C2DC /* pns.png */,
+				55F8F5BE2E011ED200E3C2DC /* src.png */,
+				55F8F5AC2E011E7500E3C2DC /* main.cpp */,
+			);
+			path = WhiteNoiseFreq;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -492,6 +543,28 @@
 			productReference = 55F3EF302DF5EE65008AE45C /* Motion Blur */;
 			productType = "com.apple.product-type.tool";
 		};
+		55F8F5AD2E011E7B00E3C2DC /* WhiteNoiseFreq */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55F8F5B72E011E7B00E3C2DC /* Build configuration list for PBXNativeTarget "WhiteNoiseFreq" */;
+			buildPhases = (
+				55F8F5AE2E011E7B00E3C2DC /* Sources */,
+				55F8F5B02E011E7B00E3C2DC /* Frameworks */,
+				55F8F5B52E011E7B00E3C2DC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				55ACCD032D9CF4350082AAB2 /* OpenCVTest */,
+			);
+			name = WhiteNoiseFreq;
+			packageProductDependencies = (
+			);
+			productName = OpenCVTest;
+			productReference = 55F8F5BA2E011E7B00E3C2DC /* WhiteNoiseFreq */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -526,6 +599,7 @@
 				5564D7D02DE6B1FE002F0650 /* HW3 */,
 				55F3EF222DF5EE65008AE45C /* Motion Blur */,
 				55E073312DF8F44600936FA0 /* HW4 */,
+				55F8F5AD2E011E7B00E3C2DC /* WhiteNoiseFreq */,
 			);
 		};
 /* End PBXProject section */
@@ -575,6 +649,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				55E073452DF8F50A00936FA0 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55F8F5AE2E011E7B00E3C2DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55F8F5BC2E011E9100E3C2DC /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -878,6 +960,36 @@
 			};
 			name = Release;
 		};
+		55F8F5B82E011E7B00E3C2DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OpenCVTest/OpenCVTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 488U7L9D53;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = /opt/homebrew/include/opencv4/;
+				LD_RUNPATH_SEARCH_PATHS = /opt/homebrew/lib;
+				LIBRARY_SEARCH_PATHS = /opt/homebrew/Cellar/opencv/4.11.0_1/lib;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		55F8F5B92E011E7B00E3C2DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OpenCVTest/OpenCVTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 488U7L9D53;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = /opt/homebrew/include/opencv4/;
+				LD_RUNPATH_SEARCH_PATHS = /opt/homebrew/lib;
+				LIBRARY_SEARCH_PATHS = /opt/homebrew/Cellar/opencv/4.11.0_1/lib;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -940,6 +1052,15 @@
 			buildConfigurations = (
 				55F3EF2E2DF5EE65008AE45C /* Debug */,
 				55F3EF2F2DF5EE65008AE45C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55F8F5B72E011E7B00E3C2DC /* Build configuration list for PBXNativeTarget "WhiteNoiseFreq" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55F8F5B82E011E7B00E3C2DC /* Debug */,
+				55F8F5B92E011E7B00E3C2DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

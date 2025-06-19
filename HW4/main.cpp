@@ -107,8 +107,8 @@ int main() {
         opening(Y, Z, se);
         // S = S or (Y-Z)
         S = S | (Y-Z);
-        Y.copyTo(X);
         if(matComp(Y, 0)) break;
+        Y.copyTo(X);
     }
     
     

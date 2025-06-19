@@ -18,6 +18,20 @@
 using namespace cv;
 using namespace std::chrono_literals;
 
+void showmag(const char* name, const Mat& img) {
+    Mat f;
+    img.copyTo(f);
+    
+    Mat F;
+    dft(f, F, DFT_COMPLEX_OUTPUT);
+    
+    Mat chan[2];
+    split(F, chan);
+    Mat mag;
+    magnitude(chan[0], chan[1], mag);
+    imshow(name, mag / 300.0);
+}
+
 
 int main(int argc, const char * argv[]) {
     std::this_thread::sleep_for(1000ms);
@@ -27,6 +41,8 @@ int main(int argc, const char * argv[]) {
     
     Mat G;
     dft(deg, G, DFT_COMPLEX_OUTPUT);
+    
+    showmag("test", deg);
     
     Mat ker = imread("ker.png", 0);
     ker.convertTo(ker, CV_32F, 1 / 255.f);
@@ -48,7 +64,7 @@ int main(int argc, const char * argv[]) {
     // https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=12637898
     rec.convertTo(rec, CV_8U, 255);
     imshow("THE KALEVALA", rec);
-    imwrite("iphw3_202127178_leeyongkyu_result.png", rec);
+//    imwrite("iphw3_202127178_leeyongkyu_result.png", rec);
     
     waitKey();
     
